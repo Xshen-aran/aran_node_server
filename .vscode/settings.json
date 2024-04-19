@@ -1,0 +1,17 @@
+{
+  "terminal.integrated.copyOnSelection": true,
+  "eslint.format.enable": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "jestrunner.jestCommand": "npx cross-env ets && npx cross-env && export $(cat .env | sed 's/#.*//g' | xargs) && NODE_ENV=local EGG_SERVER_ENV=unittest npx midway-bin test --ts -f",
+  "jestrunner.runOptions": ["--coverage", "--colors"],
+  "jestrunner.changeDirectoryToWorkspaceRoot": false
+}

@@ -6,6 +6,12 @@ export default (appInfo: MidwayAppInfo) => {
     keys: appInfo.name + '_1689147866818_5291',
     egg: {
       port: 7001,
+      globalPrefix: '/api',
+    },
+    validate: {
+      validationOptions: {
+        allowUnknown: true, // 全局生效
+      },
     },
     // security: {
     //   csrf: false,
